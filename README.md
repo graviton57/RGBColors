@@ -13,4 +13,8 @@ This Android app implements Junior Android developer courses entrance test,
    a large number of colors (content) to create an asynchronous operation / load data
    use AsyncTaskLoader.
 
+![alt text](screenshot/main.png "Main Activity")
+
+
+![alt text](screenshot/settings.png "Settings Activity")
 
