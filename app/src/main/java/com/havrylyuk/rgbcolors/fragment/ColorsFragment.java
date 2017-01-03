@@ -107,16 +107,23 @@ public class ColorsFragment extends Fragment
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+
         if (key.equals(getString(R.string.multiple_of_key))
-                ||key.equals(getString(R.string.list_size_key))
-                ||key.equals(getString(R.string.display_count_key))) {
+                ||key.equals(getString(R.string.list_size_key))) {
             ColorsProvider.getInstance(getActivity()).clearData();
             getActivity().getSupportLoaderManager().restartLoader(COLORS_LOADER, null, this);
             if (colorsAdapter != null) colorsAdapter.notifyDataSetChanged();
         }
         if (key.equals(getString(R.string.r_sort_key))||key.equals(getString(R.string.g_sort_key))
-                ||key.equals(getString(R.string.b_sort_key))) {
-            getActivity().getSupportLoaderManager().restartLoader(COLORS_LOADER, null, this);
+                ||key.equals(getString(R.string.b_sort_key)) ||key.equals(getString(R.string.display_count_key))) {
+            sortColorsList(colorsList);
+            if (!colorsList.isEmpty()) {
+                int showItems = Utility.getPrefShowItemsCount(getContext());
+                if (showItems <= colorsList.size())
+                    displayedList = new ArrayList<>(colorsList.subList(0, showItems));
+            }
+            colorsAdapter.setData(displayedList);
+
         }
 
     }
