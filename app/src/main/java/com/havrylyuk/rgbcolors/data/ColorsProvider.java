@@ -67,8 +67,7 @@ public class ColorsProvider {
         int i = 0;
         int  multipleOf =  Utility.getPrefMultipleOf(serializer.getContext());//default 51
         int  listSize =  Utility.getPrefListSize(serializer.getContext()); // default 9
-        //long lStartTime = System.nanoTime();//remove after debug
-        //Log.v(LOG_TAG, "--------- Beginning generating  "+listSize+" colors  ------- ");//remove after debug
+
         while (i < listSize) {
             Random r = new Random();
             RGBColor color = new RGBColor(r.nextInt(256), r.nextInt(256), r.nextInt(256));
@@ -77,12 +76,8 @@ public class ColorsProvider {
                 i++;
             }
         }
-        //long lEndTime = System.nanoTime();// execution finished remove after debug
-        //long timeElapsed = lEndTime - lStartTime;//remove after debug
-        //Log.v(LOG_TAG, "-------- End generate colors duration=" + (timeElapsed / 1000000000) + " sec ------");//remove after debug
-        //250 - 0 sec
-        //10 000 - 6 sec
-        //100 000 - 63 sec
+
+
 
     }
 }
