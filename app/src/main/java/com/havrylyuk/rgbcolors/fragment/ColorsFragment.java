@@ -110,17 +110,13 @@ public class ColorsFragment extends Fragment
         if (key.equals(getString(R.string.multiple_of_key))
                 ||key.equals(getString(R.string.list_size_key))
                 ||key.equals(getString(R.string.display_count_key))) {
-            Log.v(LOG_TAG,"change value: "+key);
             ColorsProvider.getInstance(getActivity()).clearData();
             getActivity().getSupportLoaderManager().restartLoader(COLORS_LOADER, null, this);
             if (colorsAdapter != null) colorsAdapter.notifyDataSetChanged();
         }
         if (key.equals(getString(R.string.r_sort_key))||key.equals(getString(R.string.g_sort_key))
                 ||key.equals(getString(R.string.b_sort_key))) {
-            Log.v(LOG_TAG,"change sort: "+key);
-            sortColorsList(colorsList);
-            displayedList = new ArrayList<>(colorsList.subList(0, Utility.getPrefShowItemsCount(getContext())));
-            colorsAdapter.setData(displayedList);
+            getActivity().getSupportLoaderManager().restartLoader(COLORS_LOADER, null, this);
         }
 
     }
