@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SortGroup Test</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="display_count_title">Показати перших кольорів</string>
+    <string name="multiple_of_title">Кольор кратний</string>
+    <string name="sort_mode_asc">По зростанню</string>
+    <string name="sort_mode_desc">По зменшенню</string>
+    <string name="sort_mode_shuffle">Перемішати</string>
+    <string name="action_generate">Згенерувати новий список</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="category_colors_sort_key"
+        android:title="Sorting order of colors">
+    <ListPreference
+        android:defaultValue="asc"
+        android:entries="@array/sort_mode"
+        android:entryValues="@array/sort_mode_value"
+        android:title="R"
+        android:key="@string/r_sort_key" />
+    <ListPreference
+        android:defaultValue="shuffle"
+        android:entries="@array/sort_mode"
+        android:entryValues="@array/sort_mode_value"
+        android:title="G"
+        android:key="@string/g_sort_key" />
+    <ListPreference
+        android:defaultValue="desc"
+        android:entries="@array/sort_mode"
+        android:entryValues="@array/sort_mode_value"
+        android:title="B"
+        android:key="@string/b_sort_key" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="category_length_list_key"
+        android:title="Setup list">
+       <EditTextPreference
+           android:key="@string/display_count_key"
+           android:title="@string/display_count_title"
+           android:defaultValue="@string/display_count_default"/>
+        <EditTextPreference
+            android:key="@string/multiple_of_key"
+            android:title="@string/multiple_of_title"
+            android:defaultValue="@string/multiple_of_default"/>
+        <EditTextPreference
+            android:key="@string/list_size_key"
+            android:title="@string/list_size_title"
+            android:defaultValue="@string/list_size_default"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

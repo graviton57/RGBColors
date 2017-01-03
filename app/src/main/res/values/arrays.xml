@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_mode">
+        <item>@string/sort_mode_asc</item>
+        <item>@string/sort_mode_desc</item>
+        <item>@string/sort_mode_shuffle</item>
+    </string-array>
+    <string-array name="sort_mode_value">
+        <item>@string/sort_mode_value_asc</item>
+        <item>@string/sort_mode_value_desc</item>
+        <item>@string/sort_mode_value_shuffle</item>
+    </string-array>
+
+    <string name="sort_mode_value_asc" translatable="false">asc</string>
+    <string name="sort_mode_value_desc" translatable="false">desc</string>
+    <string name="sort_mode_value_shuffle" translatable="false">shuffle</string>
+
+    <string name="sort_mode_asc" >Increase</string>
+    <string name="sort_mode_desc" >Decrease</string>
+    <string name="sort_mode_shuffle" >Shuffle</string>
+
+
+</resources>
