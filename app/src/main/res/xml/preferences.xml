@@ -26,17 +26,23 @@
     <PreferenceCategory
         android:key="category_length_list_key"
         android:title="Setup list">
-       <EditTextPreference
+       <com.takisoft.fix.support.v7.preference.EditTextPreference
+           android:inputType="number"
+           android:imeOptions="actionDone"
            android:key="@string/display_count_key"
            android:title="@string/display_count_title"
            android:defaultValue="@string/display_count_default"/>
-        <EditTextPreference
+        <com.takisoft.fix.support.v7.preference.EditTextPreference
+            android:inputType="number"
+            android:imeOptions="actionDone"
             android:key="@string/multiple_of_key"
             android:title="@string/multiple_of_title"
             android:defaultValue="@string/multiple_of_default"/>
-        <EditTextPreference
+        <com.takisoft.fix.support.v7.preference.EditTextPreference
             android:key="@string/list_size_key"
             android:title="@string/list_size_title"
+            android:inputType="number"
+            android:imeOptions="actionDone"
             android:defaultValue="@string/list_size_default"/>
     </PreferenceCategory>
 

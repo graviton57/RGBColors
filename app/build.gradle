@@ -32,7 +32,8 @@ dependencies {
     compile 'com.android.support:design:25.1.0'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.android.support:recyclerview-v7:25.1.0'
-    compile 'com.android.support:preference-v7:25.1.0'
+    compile 'com.takisoft.fix:preference-v7:25.0.1.0'
+    //compile 'com.android.support:preference-v7:25.1.0'
     compile 'com.android.support:support-v4:25.1.0'
     // Dependencies for local unit tests
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

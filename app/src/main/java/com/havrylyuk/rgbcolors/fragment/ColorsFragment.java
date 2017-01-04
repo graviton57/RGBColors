@@ -139,8 +139,6 @@ public class ColorsFragment extends Fragment
         return null;
     }
 
-
-
     @Override
     public void onLoadFinished(Loader<ArrayList<RGBColor>> loader, ArrayList<RGBColor> data) {
         int id = loader.getId();
@@ -149,7 +147,11 @@ public class ColorsFragment extends Fragment
             if (pbWait != null) pbWait.setVisibility(View.GONE);
             //get 9 first items
             sortColorsList(colorsList);
-            displayedList = new ArrayList<>(data.subList(0, Utility.getPrefShowItemsCount(getContext())));
+            if (!colorsList.isEmpty()) {
+                int showItems = Utility.getPrefShowItemsCount(getContext());
+                if (showItems <= colorsList.size())
+                    displayedList = new ArrayList<>(colorsList.subList(0, showItems));
+            }
             colorsAdapter.setData(displayedList);
         }
 

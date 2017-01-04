@@ -1,17 +1,17 @@
 package com.havrylyuk.rgbcolors.fragment;
 
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 
+import android.support.annotation.Nullable;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceFragmentCompat;
-
-
 import com.havrylyuk.rgbcolors.R;
 import com.havrylyuk.rgbcolors.RGBApplication;
 import com.havrylyuk.rgbcolors.validator.Validator;
+import com.takisoft.fix.support.v7.preference.PreferenceFragmentCompat;
 
 
 /**
@@ -25,43 +25,43 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     SharedPreferences sharedPreferences;
     Validator validator;
 
+
     @Override
-    public void onCreatePreferences(Bundle bundle, String s) {
-        //add xml
-        addPreferencesFromResource(R.xml.preferences);
-        validator = new Validator();
-        sharedPreferences = RGBApplication.getSharedPreferences();
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.r_sort_key));
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.g_sort_key));
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.b_sort_key));
+    public void onCreatePreferencesFix(@Nullable Bundle savedInstanceState, String rootKey) {
+            //add xml
+            addPreferencesFromResource(R.xml.preferences);
 
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.display_count_key));
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.multiple_of_key));
-        onSharedPreferenceChanged(sharedPreferences, getString(R.string.list_size_key));
+            validator = new Validator();
+            sharedPreferences = RGBApplication.getSharedPreferences();
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.r_sort_key));
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.g_sort_key));
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.b_sort_key));
 
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.display_count_key));
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.multiple_of_key));
+            onSharedPreferenceChanged(sharedPreferences, getString(R.string.list_size_key));
 
-
-        findPreference(getString(R.string.list_size_key)).setOnPreferenceChangeListener(
-                new Preference.OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(Preference preference, Object newValue) {
-                        return validator.validateListSize(getContext(), newValue);
-                    }
-                });
-        findPreference(getString(R.string.multiple_of_key)).setOnPreferenceChangeListener(
-                new Preference.OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(Preference preference, Object newValue) {
-                        return validator.validateInteger(getContext(), newValue);
-                    }
-                });
-        findPreference(getString(R.string.display_count_key)).setOnPreferenceChangeListener(
-                new Preference.OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(Preference preference, Object newValue) {
-                        return validator.validateItemsCount(getContext(), newValue);
-                    }
-                });
+            findPreference(getString(R.string.list_size_key)).setOnPreferenceChangeListener(
+                    new Preference.OnPreferenceChangeListener() {
+                        @Override
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            return validator.validateListSize(getContext(), newValue);
+                        }
+                    });
+            findPreference(getString(R.string.multiple_of_key)).setOnPreferenceChangeListener(
+                    new Preference.OnPreferenceChangeListener() {
+                        @Override
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            return validator.validateInteger(getContext(), newValue);
+                        }
+                    });
+            findPreference(getString(R.string.display_count_key)).setOnPreferenceChangeListener(
+                    new Preference.OnPreferenceChangeListener() {
+                        @Override
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            return validator.validateItemsCount(getContext(), newValue);
+                        }
+                    });
         }
 
 
