@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SortGroup Test</string>
+    <string name="app_name">SoftGroup Test</string>
     <string name="action_settings">Settings</string>
     <string name="action_generate">Load a new list</string>
     <!-- Settings preference strings-->
