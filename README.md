@@ -1,4 +1,6 @@
 # RGBColors
+
+[![Join the chat at https://gitter.im/RGBColors/Lobby](https://badges.gitter.im/RGBColors/Lobby.svg)](https://gitter.im/RGBColors/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 <p align="center">
   <img src="screenshot/logo.png" >
 </p>
