@@ -55,7 +55,7 @@ public class ColorsProvider {
     public boolean saveColors() {
         try {
             serializer.saveColors(colors);
-            Log.d(LOG_TAG, "colors saved to file");
+            //Log.d(LOG_TAG, "colors saved to file");
             return true;
         } catch (Exception e) {
             Log.e(LOG_TAG, "Error saving colors: " + e);
