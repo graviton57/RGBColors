@@ -2,6 +2,9 @@
 <p align="center">
   <img src="screenshot/logo.png" >
 </p>
+
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 This Android app implements Junior Android developer courses entrance test.
 
 ###Additionally:
