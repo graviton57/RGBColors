@@ -1,3 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="" />
+  <settings default="Graviron57">
+    <module2copyright>
+      <element module="All" copyright="Graviron57" />
+    </module2copyright>
+  </settings>
 </component>
