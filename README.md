@@ -9,7 +9,7 @@
 
 This Android app implements Junior Android developer courses entrance test.
 
-Also this Android app with SQLite database see [this project][1].
+Also this Android app with SQLite database see [https://github.com/graviton57/RGBColorsDb][1].
 
 
 
