@@ -9,6 +9,10 @@
 
 This Android app implements Junior Android developer courses entrance test.
 
+Also this Android app with SQLite database see [this project][1].
+
+
+
 ###Additionally:
 
 * The support for changing the sort order (ASCENDING, DESCENDING, SHUFFLE)
@@ -29,3 +33,5 @@ This Android app implements Junior Android developer courses entrance test.
 Developed By
 -------
 Igor Gavrilyuk (Graviton57)
+
+[1]: https://github.com/graviton57/RGBColorsDb.git

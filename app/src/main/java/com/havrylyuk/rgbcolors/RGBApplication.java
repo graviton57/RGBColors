@@ -2,7 +2,7 @@ package com.havrylyuk.rgbcolors;
 
 import android.app.Application;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import android.support.v7.preference.PreferenceManager;
 
 
 /**
@@ -18,7 +18,7 @@ public class RGBApplication extends Application {
     public void onCreate() {
         super.onCreate();
         sSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 
     public static SharedPreferences getSharedPreferences() {
