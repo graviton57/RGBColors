@@ -3,8 +3,6 @@
 /local.properties
 .DS_Store
 /build
-/captures
 .externalNativeBuild
-issue.txt
 /.idea/
 app/build/

@@ -1,4 +1,4 @@
-# RGBColors
+# RGBColorsDB
 
 <p align="center">
   <img src="screenshot/logo.png" >
@@ -7,11 +7,7 @@
 [![Join the chat at https://gitter.im/RGBColors/Lobby](https://badges.gitter.im/RGBColors/Lobby.svg)](https://gitter.im/RGBColors/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This Android app implements Junior Android developer courses entrance test.
-
-Also this Android app with SQLite database see [https://github.com/graviton57/RGBColorsDb][1].
-
-
+This Android app implements Junior Android developer courses entrance test use SQLite database.
 
 ###Additionally:
 
@@ -20,10 +16,7 @@ Also this Android app with SQLite database see [https://github.com/graviton57/RG
 * Implemented change the number to display the first list items.
 * Realized change in the multiplicity of colors forming the list.
 * Implemented a new generation of the list.
-* Implemented loading and saving color in a JSON file.
-* If you want to generate (to download from the network, database, etc.)
-   a large number of colors (content) to create an asynchronous operation / load data
-   use AsyncTaskLoader.
+* Implemented loading and saving data in SQLite database.
 
 ### Main
 ![alt text](screenshot/main.png "Main Activity")
@@ -33,5 +26,3 @@ Also this Android app with SQLite database see [https://github.com/graviton57/RG
 Developed By
 -------
 Igor Gavrilyuk (Graviton57)
-
-[1]: https://github.com/graviton57/RGBColorsDb.git
