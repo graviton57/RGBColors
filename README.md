@@ -9,7 +9,7 @@
 
 This Android app implements Junior Android developer courses entrance test.
 
-Also this Android app with SQLite database see [https://github.com/graviton57/RGBColorsDb][1].
+Also this Android app with SQLite database see branch RGBColorsDB .
 
 
 
@@ -34,4 +34,4 @@ Developed By
 -------
 Igor Gavrilyuk (Graviton57)
 
-[1]: https://github.com/graviton57/RGBColorsDb.git
+[1]: https://github.com/graviton57/RGBColors.git
