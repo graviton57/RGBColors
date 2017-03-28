@@ -11,11 +11,10 @@
 
 This Android app implements Junior Android developer courses entrance test.
 
-Also this Android app with SQLite database see branch RGBColorsDB .
+Also this Android app with SQLite database see branch [RGBColorsDB](https://github.com/graviton57/RGBColors.git) .
 
 
-
-###Additionally:
+### Additionally:
 
 * The support for changing the sort order (ASCENDING, DESCENDING, SHUFFLE)
     for each color component (RGB) (not to change the code if necessary change the sort order).
